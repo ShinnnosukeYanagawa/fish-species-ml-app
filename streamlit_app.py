@@ -10,7 +10,7 @@ class Model(nn.Module):
     self.b = nn.Parameter(torch.randn(1,dtype=torch.float32,requires_grad=True))
   def forward(self,x):
     return self.w*x + self.b
-
+# odkeocke
 model = Model()
 
 x = torch.tensor(float(input("今日の気温を教えてください"))).unsqueeze(dim=2)
